@@ -3,7 +3,7 @@ function getCenters(features){
 	var latitudeMin = 100000;//最小维度
 	var longitudeMax = 0;//最大经度
 	var latitudeMax = 0;//最大纬度
-	features.forEach(function(e){  
+	features.forEach(function(e){
 	    var a = d3.geo.bounds(e);//[[最小经度，最小维度][最大经度，最大纬度]]
 	    if(a[0][0] < longitudeMin) {
 	    	longitudeMin = a[0][0];
@@ -30,7 +30,7 @@ function getZoomScale(features, width, height){
 	var latitudeMin = 100000;//最小维度
 	var longitudeMax = 0;//最大经度
 	var latitudeMax = 0;//最大纬度
-	features.forEach(function(e){  
+	features.forEach(function(e){
 	    var a = d3.geo.bounds(e);//[[最小经度，最小维度][最大经度，最大纬度]]
 	    if(a[0][0] < longitudeMin) {
 	    	longitudeMin = a[0][0];
