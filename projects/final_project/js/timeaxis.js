@@ -36,7 +36,7 @@
 				return d;
 			})
 			.style("fill", function(d, i) {
-				return "#63B8FF";
+				return "#D3D3D3";  //#63B8FF
 			});
 
 			circles.attr("cx", function(d, i) {
@@ -70,8 +70,8 @@
 		globalyear = year;
 
 		d3.selectAll(".circle")
-		  .attr("r", 5)
-		  .style("fill", "#63B8FF")
+		  .attr("r", 6)
+		  .style("fill", "#D3D3D3")
 
 		if(t != undefined) {
 			var circle = d3.select(t);
